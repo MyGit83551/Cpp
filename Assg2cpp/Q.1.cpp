@@ -17,7 +17,6 @@ class Box
     double height;
 
     public:
-    public:
     // Parmeterless Ctor
     Box()
     {

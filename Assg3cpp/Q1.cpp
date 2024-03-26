@@ -88,5 +88,9 @@ int main()
     H=c1.getHeight();
     cout << "Height is: "<<H<<endl;
     
+    Cylinder c2(R, H);
+    cout << "Volume of cylinder with new radius and height: ";
+    c2.printVolume();
+    
     return 0;
 }
