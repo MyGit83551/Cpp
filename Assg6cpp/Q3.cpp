@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-class Employee
+class Employee //base class
 {
     private:
     int id;
@@ -39,7 +39,7 @@ class Employee
         return salary;
     }
 
-    virtual void accept()
+    virtual void accept() // to late binding
     {
         cout<<"Enter employee Id: ";
         cin>>id;
@@ -47,20 +47,20 @@ class Employee
         cin>>salary;
     }
 
-    virtual void display()
+    virtual void display() // to late binding
     {
         cout<<"Employee Id: "<<id<<","<<"Salary: "<<salary<<endl;
     
     }
 
-    virtual ~Employee()
+    virtual ~Employee() //destructor
     {
         cout << "~Employee()" << endl;
     }
 
 };
 
-class Manager: public virtual Employee
+class Manager: public virtual Employee //inherit employee into manager, to avoid ambiguity(diamond problem)
 {
     private:
     double bonus;
