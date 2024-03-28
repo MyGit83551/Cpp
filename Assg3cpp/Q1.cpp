@@ -22,9 +22,9 @@ class Cylinder
 
     public:
 
-    Cylinder(): radius(2.0), height(4.0){} // constructor delligation
+    Cylinder(): radius(2.0), height(4.0){} // constructor initialization list
 
-    Cylinder(double radius, double height) : radius(radius), height(height) {}  // constructor delligation
+    Cylinder(double radius, double height) : radius(radius), height(height) {}  // constructor initialization list
 
     double getRadius()
     {
@@ -70,7 +70,6 @@ int main()
  {
     double R;
     double H;
-    Cylinder cl;
 
     Cylinder c1;
     cout << "Volume of default cylinder: ";

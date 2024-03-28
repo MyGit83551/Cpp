@@ -36,8 +36,10 @@ public:
     }
 
     // Function to pop an element from the stack
-    void pop() {
-        if (isEmpty()) {
+    void pop() 
+    {
+        if (isEmpty()) 
+        {
             cout << "Stack is empty, Cannot pop value." << endl;
             return;
         }
@@ -54,12 +56,14 @@ public:
     }
 
     // Function to check if the stack is empty
-    bool isEmpty() {
+    bool isEmpty() 
+    {
         return top == -1;
     }
 
     // Function to check if the stack is full
-    bool isFull() {
+    bool isFull() 
+    {
         return top == size - 1;
     }
 

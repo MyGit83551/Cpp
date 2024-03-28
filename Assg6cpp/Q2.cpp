@@ -102,7 +102,7 @@ class Tape: public Product
         
         double p;
         p=getPrice();
-            p=(p-0.1*p);
+            p=(p-0.05*p);
             setPrice(p);
     }
 

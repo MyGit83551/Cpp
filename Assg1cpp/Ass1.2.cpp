@@ -1,3 +1,10 @@
+/*Q2. Write a menu driven program for Date in a CPP language using structure and also using class.
+Date is having data members day, month, year. Implement the following functions.
+void initDate();
+void printDateOnConsole();
+void acceptDateFromConsole();
+bool isLeapYear();*/
+
 #include<iostream>
 using namespace std;
 class Date
@@ -13,7 +20,7 @@ void initDate()
 dd=20;
 mm=03;
 yyyy=2024;
-cout<<"Date is:"<<dd<<"-"<<mm<<"-"<<"yyyy"<<endl;
+cout<<"Date is:"<<dd<<"-"<<mm<<"-"<<yyyy<<endl;
 
 }
 void printDateOnConsole()
